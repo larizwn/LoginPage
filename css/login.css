@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Tamanho da logo */
+.logo img {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+}
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff0f6;
+}
+
+/* Centralizar a caixa na tela */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Caixa branca de login */
+.login-box {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px 35px;
+    border: 2px  dashed  #72081C;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(150, 70, 100, 0.12);
+}
+
+/* Título */
+.login-box h3 {
+    color: black ;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 12px;
+    font-weight: normal;
+}
+
+.login-box p {
+    color: #777777;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* Textos dos campos */
+.login-box label {
+    display: block;
+    color: #6b354b;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+/* Campos de entrada */
+.login-box input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ead5df;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.login-box input:focus {
+    border-color: #e86a9b;
+}
+
+/* Esqueceu a senha */
+.esqueceu-senha {
+    display: block;
+    text-align: right;
+    color: #707070;
+    text-decoration: underline;
+    font-size: 13px;
+    margin-top: -8px;
+    margin-bottom: 22px;
+    
+}
+
+/* Botão entrar */
+.login-box button {
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+    padding: 14px;
+    background-color: #FB678C;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-box button:hover {
+    background-color: #d9578c;
+}
+
+.login-google {
+    width: 220px;
+    padding: 12px;
+    margin: 15px auto 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    background-color: #ffffff;
+
+    color: #444444;
+    font-size: 14px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.separador {
+    text-align: center;
+    color: #999999;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 15px 0;
+}
+.login-google img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* Cadastro */
+.login-box .cadastro {
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.cadastro a {
+    color: #d9578c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Adaptação para celular */
+@media (max-width: 480px) {
+    .login-box {
+        padding: 30px 22px;
+    }
+
+    .login-box h1 {
+        font-size: 23px;
+    }
+}
